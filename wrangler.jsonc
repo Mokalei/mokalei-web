@@ -1,0 +1,9 @@
+// Configuration Cloudflare : le site est servi comme fichiers statiques depuis _site.
+{
+  "name": "mokalei",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./_site",
+    "not_found_handling": "404-page"
+  }
+}
