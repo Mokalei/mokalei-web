@@ -17,6 +17,10 @@ content:
     - name: email
       label: Adresse email
       type: string
+    - name: lien_maps
+      label: Lien Google Maps
+      type: string
+      description: Lien de localisation (bouton Partager de Google Maps). Laissez vide pour masquer le lien.
     - name: instagram
       label: Lien Instagram
       type: string
@@ -453,6 +457,9 @@ content:
     - name: adresse
       label: Adresse
       type: string
+    - name: lien_maps_texte
+      label: Texte du lien Google Maps
+      type: string
     - name: label_acces
       label: Intitulé Accès
       type: string
@@ -707,6 +714,9 @@ content:
       type: string
     - name: adresse
       label: Adresse
+      type: string
+    - name: lien_maps_texte
+      label: Texte du lien Google Maps
       type: string
     - name: label_acces
       label: Intitulé Accès
