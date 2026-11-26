@@ -1,0 +1,194 @@
+{#-
+  Gabarit unique du site MOKALEI (français et anglais).
+  Les textes sont dans src/_data/fr.json et src/_data/en.json,
+  les photos, vidéos et coordonnées dans src/_data/site.json.
+  Tout se modifie depuis Pages CMS : inutile de toucher à ce fichier.
+-#}
+{%- set t = fr if lang == "fr" else en -%}
+{%- set autre = "/" if lang == "fr" else "/fr/" -%}
+{%- macro photo(p, classe) -%}
+<img class="{{ classe }}" src="{{ p.image }}" alt="{{ p['description_' + lang] }}" loading="lazy">
+{%- endmacro -%}
+{%- macro media(p, classe) -%}
+{%- if p.video -%}
+<video class="{{ classe }}" src="{{ p.video }}" poster="{{ p.image }}" autoplay muted loop playsinline preload="metadata" aria-label="{{ p['description_' + lang] }}"></video>
+{%- else -%}
+{{ photo(p, classe) }}
+{%- endif -%}
+{%- endmacro -%}
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ t.titre_onglet }}</title>
+<meta name="description" content="{{ t.description_google }}">
+<meta property="og:title" content="{{ t.titre_onglet }}">
+<meta property="og:description" content="{{ t.description_google }}">
+<meta property="og:image" content="{{ site.photo_accueil.image }}">
+<link rel="alternate" hreflang="en" href="/">
+<link rel="alternate" hreflang="fr" href="/fr/">
+<link rel="icon" href="/media/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="sombre">
+  <nav class="bloc nav">
+    <a href="#haut" class="marque">MOKALEI</a>
+    <div class="liens">
+      <a href="#histoire">{{ t.menu.histoire }}</a>
+      <a href="#sejour">{{ t.menu.sejour }}</a>
+      <a href="#vue">{{ t.menu.vue }}</a>
+      <a href="#legendes">{{ t.menu.legendes }}</a>
+      <a href="#explorer">{{ t.menu.explorer }}</a>
+      <a href="#reserver">{{ t.menu.reserver }}</a>
+      <a href="{{ autre }}" class="langue" lang="{{ 'en' if lang == 'fr' else 'fr' }}">{{ "EN" if lang == "fr" else "FR" }}</a>
+    </div>
+  </nav>
+  <div id="haut" class="bloc accueil">
+    <div class="accueil-texte">
+      <img src="{{ site.logo }}" alt="MOKALEI" class="logo">
+      <p class="surtitre or">{{ t.accueil.surtitre }}</p>
+      <h1>{{ t.accueil.titre }}</h1>
+      <p class="intro">{{ t.accueil.texte }}</p>
+      <div class="boutons">
+        <a href="#reserver" class="bouton plein-or">{{ t.accueil.bouton_1 }}</a>
+        <a href="#histoire" class="bouton contour-clair">{{ t.accueil.bouton_2 }}</a>
+      </div>
+    </div>
+    {%- if site.video_accueil and site.video_accueil.video %}
+    <figure class="accueil-video">
+      <video src="{{ site.video_accueil.video }}" poster="{{ site.video_accueil.image }}" autoplay muted loop playsinline preload="metadata" aria-label="{{ site.video_accueil['description_' + lang] }}"></video>
+      <figcaption>{{ t.accueil.legende_video }}</figcaption>
+    </figure>
+    {%- endif %}
+  </div>
+  <img class="photo-accueil" src="{{ site.photo_accueil.image }}" alt="{{ site.photo_accueil['description_' + lang] }}">
+</header>
+
+<main>
+<section id="histoire" class="bloc section deux-colonnes">
+  <div class="col-etroite">
+    <p class="surtitre">{{ t.histoire.surtitre }}</p>
+    <h2>{{ t.histoire.titre }}</h2>
+    <div class="grille-plaques">
+      {% for p in site.photos_histoire %}{{ photo(p, "photo h260") }}{% endfor %}
+    </div>
+  </div>
+  <div class="col-large texte-17">
+    <p>{{ t.histoire.texte_1 }}</p>
+    <div class="prenoms">
+      <div><span>MO</span>Moehau</div>
+      <div><span>KA</span>Kahaia</div>
+      <div><span>LEI</span>Leilani</div>
+    </div>
+    <p>{{ t.histoire.texte_2 }}</p>
+  </div>
+</section>
+
+<section id="sejour" class="beige">
+  <div class="bloc section">
+    <p class="surtitre">{{ t.sejour.surtitre }}</p>
+    <h2>{{ t.sejour.titre }}</h2>
+    <p class="texte-17 mesure">{{ t.sejour.texte }}</p>
+    <div class="fares">
+      {% for f in t.sejour.fares %}
+      <div class="carte fare"><p class="surtitre">{{ f.surtitre }}</p><h3>{{ f.nom }}</h3><p>{{ f.texte }}</p></div>
+      {% endfor %}
+    </div>
+    <div class="galerie">
+      {% for p in site.photos_sejour %}{{ photo(p, "photo h300") }}{% endfor %}
+    </div>
+    <div class="galerie-interieur">
+      {% for p in site.photos_interieur %}{{ media(p, "photo h420") }}{% endfor %}
+    </div>
+    <p class="legende-interieur">{{ t.sejour.legende_interieur }}</p>
+    <div class="cartes">
+      {% for a in t.sejour.atouts %}
+      <div class="carte"><h3>{{ a.titre }}</h3><p>{{ a.texte }}</p></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="vue" class="bloc section deux-colonnes centre">
+  {{ photo(site.photo_vue, "photo photo-vue") }}
+  <div class="col-moitie">
+    <p class="surtitre">{{ t.vue.surtitre }}</p>
+    <h2>{{ t.vue.titre }}</h2>
+    <p class="texte-17">{{ t.vue.texte }}</p>
+    <ul class="montagnes">
+      {% for m in t.vue.montagnes %}<li><strong>{{ m.nom }}</strong> · {{ m.texte }}</li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section id="soirees" class="nuit">
+  <div class="bloc section">
+    <p class="surtitre or">{{ t.soirees.surtitre }}</p>
+    <h2>{{ t.soirees.titre }}</h2>
+    <div class="galerie">
+      {% for p in site.photos_soirees %}{{ photo(p, "photo h380") }}{% endfor %}
+    </div>
+    <p class="legende-galerie">{{ t.soirees.texte }}</p>
+  </div>
+</section>
+
+<section id="legendes" class="sombre">
+  <div class="bloc section">
+    <p class="surtitre or">{{ t.legendes.surtitre }}</p>
+    <h2>{{ t.legendes.titre }}</h2>
+    <div class="legendes">
+      {% for i in [1, 2, 3] %}
+      {% set img = site['image_legende_' + i] %}{% set leg = t.legendes['legende_' + i] %}
+      <article>
+        {{ photo(img, "photo h220") }}
+        <h3>{{ leg.titre }}</h3>
+        <p>{{ leg.texte }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="explorer" class="bloc section">
+  <p class="surtitre">{{ t.explorer.surtitre }}</p>
+  <h2>{{ t.explorer.titre }}</h2>
+  <div class="idees">
+    {% for idee in t.explorer.idees %}<div><h3>{{ idee.titre }}</h3><p>{{ idee.texte }}</p></div>{% endfor %}
+  </div>
+</section>
+
+<section id="reserver" class="beige">
+  <div class="bloc section deux-colonnes">
+    <div class="col-large">
+      <h2>{{ t.reservation.titre }}</h2>
+      <p class="texte-17 mesure">{{ t.reservation.texte }}</p>
+      <div class="boutons">
+        {% if site.contact.lien_airbnb %}<a href="{{ site.contact.lien_airbnb }}" class="bouton plein-sombre" rel="noopener">{{ t.reservation.bouton_airbnb }}</a>{% endif %}
+        <a href="mailto:{{ site.contact.email }}" class="bouton {{ 'contour-sombre' if site.contact.lien_airbnb else 'plein-sombre' }}">{{ t.reservation.bouton_email }}</a>
+      </div>
+    </div>
+    <div class="col-etroite infos">
+      <div><span class="label">{{ t.reservation.label_adresse }}</span>{{ t.reservation.adresse }}</div>
+      {% if t.reservation.acces %}<div><span class="label">{{ t.reservation.label_acces }}</span>{{ t.reservation.acces }}</div>{% endif %}
+      <div><span class="label">{{ t.reservation.label_email }}</span><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></div>
+      <div><span class="label">{{ t.reservation.label_reseaux }}</span>{{ site.contact.instagram }}</div>
+      {% if site.contact.numero_enregistrement %}<div><span class="label">{{ t.reservation.label_enregistrement }}</span>{{ site.contact.numero_enregistrement }}</div>{% endif %}
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="sombre">
+  <div class="bloc pied">
+    <span class="marque petite">MOKALEI</span>
+    <span>{{ t.pied_de_page }}</span>
+  </div>
+</footer>
+</body>
+</html>

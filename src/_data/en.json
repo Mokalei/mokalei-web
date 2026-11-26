@@ -1,0 +1,155 @@
+{
+  "titre_onglet": "MOKALEI — Mo'orea Caldera Retreat",
+  "description_google": "MOKALEI, three wooden fare in Mo'orea's ancient caldera, Paopao, Cook's Bay. Chlorine-free biological pool, mountain views. Book one fare or the whole property for up to 16 guests.",
+  "menu": {
+    "histoire": "Our story",
+    "sejour": "The stay",
+    "vue": "The view",
+    "legendes": "Legends",
+    "explorer": "Explore",
+    "reserver": "Book"
+  },
+  "accueil": {
+    "surtitre": "Paopao · Cook's Bay · Mo'orea",
+    "titre": "A retreat inside Mo'orea's ancient caldera",
+    "texte": "Three fare beneath Mou'a Puta, the Tohiea massif and Mount Rotui. A chlorine-free biological pool, panoramic caldera views, and the quiet rhythm of the island's interior.",
+    "bouton_1": "Check availability",
+    "bouton_2": "Discover MOKALEI",
+    "legende_video": "MOKALEI in 40 seconds"
+  },
+  "histoire": {
+    "surtitre": "The meaning of MOKALEI",
+    "titre": "A name that once crossed the lagoons",
+    "texte_1": "Years ago, our late father named his deep-sea fishing boat in Bora Bora after his three daughters. He joined their names into one: MOKALEI.",
+    "texte_2": "Today the name has a new home in the mountains of Mo'orea. Each of our three bungalows carries one of the sisters' names: Fare Moehau, Fare Kahaia and Fare Leilani."
+  },
+  "sejour": {
+    "surtitre": "Your stay",
+    "titre": "Three fare, each with its own mountain",
+    "texte": "Three independent wooden fare, simple and comfortable, linked by shared outdoor spaces. Each has a fully equipped kitchen with counter dining, a living room with two daybeds, a bathroom and its own private outdoor shower. Book a single fare, or the whole property for up to 16 guests.",
+    "fares": [
+      {
+        "surtitre": "Facing Mou'a Puta",
+        "nom": "Fare Moehau",
+        "texte": "1 bedroom · up to 4 guests. A king bed (two singles joined with a king topper) and two daybeds in the living room."
+      },
+      {
+        "surtitre": "Facing the Tohiea massif",
+        "nom": "Fare Kahaia",
+        "texte": "2 bedrooms · up to 6 guests. A king bed, a room with two single beds, and two daybeds in the living room."
+      },
+      {
+        "surtitre": "Facing Mount Rotui",
+        "nom": "Fare Leilani",
+        "texte": "2 bedrooms · up to 6 guests. A king bed, a room with two single beds, and two daybeds in the living room."
+      }
+    ],
+    "legende_interieur": "Living area and counter dining · bathroom · private outdoor shower · bedroom",
+    "atouts": [
+      {
+        "titre": "Up to 16 guests",
+        "texte": "One fare for a private stay, or the whole property for families, groups of friends, retreats or sports teams."
+      },
+      {
+        "titre": "A biological pool",
+        "texte": "No chlorine. Plants and small fish filter the water naturally in a living ecosystem."
+      },
+      {
+        "titre": "Shared outdoor spaces",
+        "texte": "BBQ area, a picnic table seating 16, a fire pit, an open lawn, a swinging bed platform under the trees and the Māpē Stream Nook."
+      },
+      {
+        "titre": "Spring water",
+        "texte": "Supplied by a private well, with complimentary bottled drinking water on arrival. Wi-Fi, washing machine and drying rack on site."
+      }
+    ]
+  },
+  "vue": {
+    "surtitre": "Reading the landscape",
+    "titre": "A view few visitors ever see",
+    "texte": "Most photos of Mo'orea show the mountains from the lagoon. From MOKALEI you look at the western side of the Tohiea massif, the island's highest summit, and its dramatic interior ridges.",
+    "montagnes": [
+      {
+        "nom": "Mou'a Puta",
+        "texte": "the pierced mountain, whose ridge inspired our logo"
+      },
+      {
+        "nom": "Tohiea massif",
+        "texte": "Mo'orea's highest summit"
+      },
+      {
+        "nom": "Mou'a Roa",
+        "texte": "\"the great mountain\", linked to the Bali Ha'i of South Pacific"
+      },
+      {
+        "nom": "Mount Rotui",
+        "texte": "rising between Cook's Bay and 'Ōpūnohu Bay"
+      }
+    ]
+  },
+  "soirees": {
+    "surtitre": "Evenings at MOKALEI",
+    "titre": "When the mountain turns silver",
+    "texte": "Dinner under the string lights of the pavilion, a fire on the lawn, and the moon rising over the caldera."
+  },
+  "legendes": {
+    "surtitre": "Legends of Mo'orea",
+    "titre": "Before geology, the mountains were explained by stories",
+    "legende_1": {
+      "titre": "Hiro and the pierced mountain",
+      "texte": "In one version, the navigator Hiro tried to steal Mount Rotui. The warrior Pai's spear pierced Mou'a Puta, leaving its famous opening."
+    },
+    "legende_2": {
+      "titre": "Aimeho and the sacred octopus",
+      "texte": "Mo'orea's ancient name recalls an octopus whose eight arms are the island's eight main ridges."
+    },
+    "legende_3": {
+      "titre": "The māpē grove",
+      "texte": "Along our stream remain an ancient grove of māpē, the Tahitian chestnut. We protect it so it can flourish again."
+    }
+  },
+  "explorer": {
+    "surtitre": "Explore from MOKALEI",
+    "titre": "At the centre of the island",
+    "idees": [
+      {
+        "titre": "Mountain trails",
+        "texte": "The Belvédère, the ancestral path E'a Tupuna among the māpē, the Trois Pinus pass and its view over both bays."
+      },
+      {
+        "titre": "Heritage sites",
+        "texte": "The marae of 'Ōpūnohu Valley and the octagonal temple of Papetoai."
+      },
+      {
+        "titre": "Beaches and lagoon",
+        "texte": "Temae, Ta'ahiamanu and Tiahura for snorkelling, rays and turtles with local guides."
+      },
+      {
+        "titre": "Pineapple country",
+        "texte": "The Route des Ananas by foot, e-bike or guided quad, through working farms."
+      },
+      {
+        "titre": "Out on the water",
+        "texte": "From the Cook's Bay landing: seasonal whale watching, rays and sharks, snorkelling trips and lagoon cruises."
+      },
+      {
+        "titre": "Shops in Maharepa",
+        "texte": "A few minutes away: supermarkets, bakeries, cafés, restaurants, pharmacies and banks."
+      }
+    ]
+  },
+  "reservation": {
+    "titre": "Plan your stay",
+    "texte": "One fare for 4 or 6 guests, or the whole property for up to 16. Self check-in from 3:00 PM, check-out by 10:00 AM. Bookings are made through Airbnb.",
+    "bouton_airbnb": "Book on Airbnb",
+    "bouton_email": "Write to us",
+    "label_adresse": "Address",
+    "adresse": "Paopao, Cook's Bay, Mo'orea, French Polynesia",
+    "label_acces": "Access",
+    "acces": "The last stretch of road is unsealed: fine by scooter or car in normal weather, a 4WD is recommended after heavy rain.",
+    "label_email": "Email",
+    "label_reseaux": "Instagram · Facebook",
+    "label_enregistrement": "Registration no."
+  },
+  "pied_de_page": "Mo'orea Caldera Retreat · Paopao, French Polynesia"
+}

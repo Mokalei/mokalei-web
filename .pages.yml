@@ -1,0 +1,725 @@
+# Configuration de l'éditeur Pages CMS (app.pagescms.org).
+# Définit les formulaires que voit la personne qui met à jour le site.
+media:
+  input: src/media
+  output: /media
+content:
+- name: photos
+  label: 📷 Photos, vidéos et coordonnées
+  type: file
+  path: src/_data/site.json
+  format: json
+  fields:
+  - name: contact
+    label: Coordonnées
+    type: object
+    fields:
+    - name: email
+      label: Adresse email
+      type: string
+    - name: instagram
+      label: Compte Instagram / Facebook
+      type: string
+      description: 'Exemple : @mokaleimoorea'
+    - name: lien_airbnb
+      label: Lien de l'annonce Airbnb
+      type: string
+      description: 'Laissez vide tant que l''annonce n''est pas publiée : le bouton Airbnb sera masqué.'
+    - name: numero_enregistrement
+      label: N° d'enregistrement (Service du Tourisme)
+      type: string
+      description: Format DTO-MT. Laissez vide pour le masquer.
+  - name: logo
+    label: Logo
+    type: image
+    description: Logo blanc sur fond noir.
+  - name: video_accueil
+    label: Vidéo d'accueil (en haut à droite)
+    type: object
+    fields:
+    - name: video
+      label: Vidéo (MP4)
+      type: file
+      description: Vidéo verticale (format téléphone), MP4, moins de 20 Mo. Elle se lance seule, sans le son, en boucle. Laissez vide pour la masquer.
+      options:
+        extensions:
+        - mp4
+    - name: image
+      label: Image d'attente
+      type: image
+      description: Image affichée pendant le chargement de la vidéo.
+    - name: description_fr
+      label: Description de la vidéo (français)
+      type: text
+    - name: description_en
+      label: Description de la vidéo (anglais)
+      type: text
+  - name: photo_accueil
+    label: Grande photo d'accueil (sous le titre)
+    type: object
+    fields:
+    - name: image
+      label: Photo
+      type: image
+      description: Cliquez pour choisir ou téléverser une photo (format paysage conseillé, JPG).
+    - name: description_fr
+      label: Description de la photo (français)
+      type: text
+      description: Une phrase qui décrit la photo. Lue par Google et par les personnes malvoyantes.
+    - name: description_en
+      label: Description de la photo (anglais)
+      type: text
+      description: La même phrase, en anglais.
+  - name: photos_histoire
+    label: Photos « Notre histoire » (plaques des fare)
+    type: object
+    fields:
+    - name: image
+      label: Photo
+      type: image
+      description: Cliquez pour choisir ou téléverser une photo (format paysage conseillé, JPG).
+    - name: description_fr
+      label: Description de la photo (français)
+      type: text
+      description: Une phrase qui décrit la photo. Lue par Google et par les personnes malvoyantes.
+    - name: description_en
+      label: Description de la photo (anglais)
+      type: text
+      description: La même phrase, en anglais.
+    description: 3 photos conseillées (une par fare).
+    list: true
+  - name: photos_sejour
+    label: Photos « Le séjour » (chambres, cuisine…)
+    type: object
+    fields:
+    - name: image
+      label: Photo
+      type: image
+      description: Cliquez pour choisir ou téléverser une photo (format paysage conseillé, JPG).
+    - name: description_fr
+      label: Description de la photo (français)
+      type: text
+      description: Une phrase qui décrit la photo. Lue par Google et par les personnes malvoyantes.
+    - name: description_en
+      label: Description de la photo (anglais)
+      type: text
+      description: La même phrase, en anglais.
+    description: 3 photos conseillées. Vous pouvez en ajouter, en retirer ou changer l'ordre.
+    list: true
+  - name: photos_interieur
+    label: Photos et vidéos « Dans chaque fare » (salon, salle de bain, douche…)
+    type: object
+    fields:
+    - name: video
+      label: Vidéo (MP4)
+      type: file
+      description: Facultatif. Si une vidéo est choisie, elle remplace la photo (qui sert alors d'image d'attente). Format vertical, MP4, courte.
+      options:
+        extensions:
+        - mp4
+    - name: image
+      label: Photo
+      type: image
+      description: Cliquez pour choisir ou téléverser une photo (format paysage conseillé, JPG).
+    - name: description_fr
+      label: Description de la photo (français)
+      type: text
+      description: Une phrase qui décrit la photo. Lue par Google et par les personnes malvoyantes.
+    - name: description_en
+      label: Description de la photo (anglais)
+      type: text
+      description: La même phrase, en anglais.
+    description: 4 éléments conseillés, en format vertical.
+    list: true
+  - name: photo_vue
+    label: Photo « La vue »
+    type: object
+    fields:
+    - name: image
+      label: Photo
+      type: image
+      description: Cliquez pour choisir ou téléverser une photo (format paysage conseillé, JPG).
+    - name: description_fr
+      label: Description de la photo (français)
+      type: text
+      description: Une phrase qui décrit la photo. Lue par Google et par les personnes malvoyantes.
+    - name: description_en
+      label: Description de la photo (anglais)
+      type: text
+      description: La même phrase, en anglais.
+  - name: photos_soirees
+    label: Photos « Les soirées »
+    type: object
+    fields:
+    - name: image
+      label: Photo
+      type: image
+      description: Cliquez pour choisir ou téléverser une photo (format paysage conseillé, JPG).
+    - name: description_fr
+      label: Description de la photo (français)
+      type: text
+      description: Une phrase qui décrit la photo. Lue par Google et par les personnes malvoyantes.
+    - name: description_en
+      label: Description de la photo (anglais)
+      type: text
+      description: La même phrase, en anglais.
+    description: 3 photos conseillées, format portrait ou paysage.
+    list: true
+  - name: image_legende_1
+    label: Image de la légende 1 (Hiro)
+    type: object
+    fields:
+    - name: image
+      label: Photo
+      type: image
+      description: Cliquez pour choisir ou téléverser une photo (format paysage conseillé, JPG).
+    - name: description_fr
+      label: Description de la photo (français)
+      type: text
+      description: Une phrase qui décrit la photo. Lue par Google et par les personnes malvoyantes.
+    - name: description_en
+      label: Description de la photo (anglais)
+      type: text
+      description: La même phrase, en anglais.
+  - name: image_legende_2
+    label: Image de la légende 2 (pieuvre)
+    type: object
+    fields:
+    - name: image
+      label: Photo
+      type: image
+      description: Cliquez pour choisir ou téléverser une photo (format paysage conseillé, JPG).
+    - name: description_fr
+      label: Description de la photo (français)
+      type: text
+      description: Une phrase qui décrit la photo. Lue par Google et par les personnes malvoyantes.
+    - name: description_en
+      label: Description de la photo (anglais)
+      type: text
+      description: La même phrase, en anglais.
+  - name: image_legende_3
+    label: Image de la légende 3 (māpē)
+    type: object
+    fields:
+    - name: image
+      label: Photo
+      type: image
+      description: Cliquez pour choisir ou téléverser une photo (format paysage conseillé, JPG).
+    - name: description_fr
+      label: Description de la photo (français)
+      type: text
+      description: Une phrase qui décrit la photo. Lue par Google et par les personnes malvoyantes.
+    - name: description_en
+      label: Description de la photo (anglais)
+      type: text
+      description: La même phrase, en anglais.
+- name: textes_fr
+  label: 🇫🇷 Textes en français
+  type: file
+  path: src/_data/fr.json
+  format: json
+  fields:
+  - name: titre_onglet
+    label: Titre de l'onglet du navigateur
+    type: string
+  - name: description_google
+    label: Description pour Google
+    type: text
+    description: Environ 150 caractères. Affichée sous le titre dans les résultats de recherche.
+  - name: menu
+    label: Menu du haut
+    type: object
+    fields:
+    - name: histoire
+      label: Lien Notre histoire
+      type: string
+    - name: sejour
+      label: Lien Le séjour
+      type: string
+    - name: vue
+      label: Lien La vue
+      type: string
+    - name: legendes
+      label: Lien Légendes
+      type: string
+    - name: explorer
+      label: Lien Explorer
+      type: string
+    - name: reserver
+      label: Lien Réserver
+      type: string
+  - name: accueil
+    label: Haut de page
+    type: object
+    fields:
+    - name: surtitre
+      label: Petit texte au-dessus du titre
+      type: string
+    - name: titre
+      label: Grand titre
+      type: string
+    - name: texte
+      label: Texte d'introduction
+      type: text
+    - name: bouton_1
+      label: Bouton doré
+      type: string
+    - name: bouton_2
+      label: Bouton contour
+      type: string
+    - name: legende_video
+      label: Texte sous la vidéo
+      type: string
+  - name: histoire
+    label: Section « Notre histoire »
+    type: object
+    fields:
+    - name: surtitre
+      label: Petit texte au-dessus du titre
+      type: string
+    - name: titre
+      label: Titre
+      type: string
+    - name: texte_1
+      label: Paragraphe 1
+      type: text
+    - name: texte_2
+      label: Paragraphe 2
+      type: text
+  - name: sejour
+    label: Section « Le séjour »
+    type: object
+    fields:
+    - name: surtitre
+      label: Petit texte au-dessus du titre
+      type: string
+    - name: titre
+      label: Titre
+      type: string
+    - name: texte
+      label: Texte
+      type: text
+    - name: fares
+      label: Les trois fare
+      type: object
+      fields:
+      - name: surtitre
+        label: Petit texte (montagne en face)
+        type: string
+      - name: nom
+        label: Nom du fare
+        type: string
+      - name: texte
+        label: Chambres et couchages
+        type: text
+      description: Une case par fare.
+      list: true
+    - name: legende_interieur
+      label: Texte sous les photos « Dans chaque fare »
+      type: string
+    - name: atouts
+      label: Encadrés
+      type: object
+      fields:
+      - name: titre
+        label: Titre
+        type: string
+      - name: texte
+        label: Texte
+        type: text
+      description: Les cases beiges en bas de la section.
+      list: true
+  - name: vue
+    label: Section « La vue »
+    type: object
+    fields:
+    - name: surtitre
+      label: Petit texte au-dessus du titre
+      type: string
+    - name: titre
+      label: Titre
+      type: string
+    - name: texte
+      label: Texte
+      type: text
+    - name: montagnes
+      label: Montagnes
+      type: object
+      fields:
+      - name: nom
+        label: Nom
+        type: string
+      - name: texte
+        label: Description courte
+        type: string
+      list: true
+  - name: soirees
+    label: Section « Les soirées »
+    type: object
+    fields:
+    - name: surtitre
+      label: Petit texte au-dessus du titre
+      type: string
+    - name: titre
+      label: Titre
+      type: string
+    - name: texte
+      label: Texte sous les photos
+      type: text
+  - name: legendes
+    label: Section « Légendes »
+    type: object
+    fields:
+    - name: surtitre
+      label: Petit texte au-dessus du titre
+      type: string
+    - name: titre
+      label: Titre
+      type: string
+    - name: legende_1
+      label: Légende 1
+      type: object
+      fields:
+      - name: titre
+        label: Titre
+        type: string
+      - name: texte
+        label: Texte
+        type: text
+    - name: legende_2
+      label: Légende 2
+      type: object
+      fields:
+      - name: titre
+        label: Titre
+        type: string
+      - name: texte
+        label: Texte
+        type: text
+    - name: legende_3
+      label: Légende 3
+      type: object
+      fields:
+      - name: titre
+        label: Titre
+        type: string
+      - name: texte
+        label: Texte
+        type: text
+  - name: explorer
+    label: Section « Explorer »
+    type: object
+    fields:
+    - name: surtitre
+      label: Petit texte au-dessus du titre
+      type: string
+    - name: titre
+      label: Titre
+      type: string
+    - name: idees
+      label: Idées de sorties
+      type: object
+      fields:
+      - name: titre
+        label: Titre
+        type: string
+      - name: texte
+        label: Texte
+        type: text
+      list: true
+  - name: reservation
+    label: Section « Réserver »
+    type: object
+    fields:
+    - name: titre
+      label: Titre
+      type: string
+    - name: texte
+      label: Texte
+      type: text
+    - name: bouton_airbnb
+      label: Bouton Airbnb
+      type: string
+    - name: bouton_email
+      label: Bouton email
+      type: string
+    - name: label_adresse
+      label: Intitulé Adresse
+      type: string
+    - name: adresse
+      label: Adresse
+      type: string
+    - name: label_acces
+      label: Intitulé Accès
+      type: string
+    - name: acces
+      label: Accès (route)
+      type: text
+      description: Laissez vide pour masquer.
+    - name: label_email
+      label: Intitulé Email
+      type: string
+    - name: label_reseaux
+      label: Intitulé Réseaux
+      type: string
+    - name: label_enregistrement
+      label: Intitulé N° d'enregistrement
+      type: string
+  - name: pied_de_page
+    label: Texte du bas de page
+    type: string
+- name: textes_en
+  label: 🇬🇧 Textes en anglais
+  type: file
+  path: src/_data/en.json
+  format: json
+  fields:
+  - name: titre_onglet
+    label: Titre de l'onglet du navigateur
+    type: string
+  - name: description_google
+    label: Description pour Google
+    type: text
+    description: Environ 150 caractères. Affichée sous le titre dans les résultats de recherche.
+  - name: menu
+    label: Menu du haut
+    type: object
+    fields:
+    - name: histoire
+      label: Lien Notre histoire
+      type: string
+    - name: sejour
+      label: Lien Le séjour
+      type: string
+    - name: vue
+      label: Lien La vue
+      type: string
+    - name: legendes
+      label: Lien Légendes
+      type: string
+    - name: explorer
+      label: Lien Explorer
+      type: string
+    - name: reserver
+      label: Lien Réserver
+      type: string
+  - name: accueil
+    label: Haut de page
+    type: object
+    fields:
+    - name: surtitre
+      label: Petit texte au-dessus du titre
+      type: string
+    - name: titre
+      label: Grand titre
+      type: string
+    - name: texte
+      label: Texte d'introduction
+      type: text
+    - name: bouton_1
+      label: Bouton doré
+      type: string
+    - name: bouton_2
+      label: Bouton contour
+      type: string
+    - name: legende_video
+      label: Texte sous la vidéo
+      type: string
+  - name: histoire
+    label: Section « Notre histoire »
+    type: object
+    fields:
+    - name: surtitre
+      label: Petit texte au-dessus du titre
+      type: string
+    - name: titre
+      label: Titre
+      type: string
+    - name: texte_1
+      label: Paragraphe 1
+      type: text
+    - name: texte_2
+      label: Paragraphe 2
+      type: text
+  - name: sejour
+    label: Section « Le séjour »
+    type: object
+    fields:
+    - name: surtitre
+      label: Petit texte au-dessus du titre
+      type: string
+    - name: titre
+      label: Titre
+      type: string
+    - name: texte
+      label: Texte
+      type: text
+    - name: fares
+      label: Les trois fare
+      type: object
+      fields:
+      - name: surtitre
+        label: Petit texte (montagne en face)
+        type: string
+      - name: nom
+        label: Nom du fare
+        type: string
+      - name: texte
+        label: Chambres et couchages
+        type: text
+      description: Une case par fare.
+      list: true
+    - name: legende_interieur
+      label: Texte sous les photos « Dans chaque fare »
+      type: string
+    - name: atouts
+      label: Encadrés
+      type: object
+      fields:
+      - name: titre
+        label: Titre
+        type: string
+      - name: texte
+        label: Texte
+        type: text
+      description: Les cases beiges en bas de la section.
+      list: true
+  - name: vue
+    label: Section « La vue »
+    type: object
+    fields:
+    - name: surtitre
+      label: Petit texte au-dessus du titre
+      type: string
+    - name: titre
+      label: Titre
+      type: string
+    - name: texte
+      label: Texte
+      type: text
+    - name: montagnes
+      label: Montagnes
+      type: object
+      fields:
+      - name: nom
+        label: Nom
+        type: string
+      - name: texte
+        label: Description courte
+        type: string
+      list: true
+  - name: soirees
+    label: Section « Les soirées »
+    type: object
+    fields:
+    - name: surtitre
+      label: Petit texte au-dessus du titre
+      type: string
+    - name: titre
+      label: Titre
+      type: string
+    - name: texte
+      label: Texte sous les photos
+      type: text
+  - name: legendes
+    label: Section « Légendes »
+    type: object
+    fields:
+    - name: surtitre
+      label: Petit texte au-dessus du titre
+      type: string
+    - name: titre
+      label: Titre
+      type: string
+    - name: legende_1
+      label: Légende 1
+      type: object
+      fields:
+      - name: titre
+        label: Titre
+        type: string
+      - name: texte
+        label: Texte
+        type: text
+    - name: legende_2
+      label: Légende 2
+      type: object
+      fields:
+      - name: titre
+        label: Titre
+        type: string
+      - name: texte
+        label: Texte
+        type: text
+    - name: legende_3
+      label: Légende 3
+      type: object
+      fields:
+      - name: titre
+        label: Titre
+        type: string
+      - name: texte
+        label: Texte
+        type: text
+  - name: explorer
+    label: Section « Explorer »
+    type: object
+    fields:
+    - name: surtitre
+      label: Petit texte au-dessus du titre
+      type: string
+    - name: titre
+      label: Titre
+      type: string
+    - name: idees
+      label: Idées de sorties
+      type: object
+      fields:
+      - name: titre
+        label: Titre
+        type: string
+      - name: texte
+        label: Texte
+        type: text
+      list: true
+  - name: reservation
+    label: Section « Réserver »
+    type: object
+    fields:
+    - name: titre
+      label: Titre
+      type: string
+    - name: texte
+      label: Texte
+      type: text
+    - name: bouton_airbnb
+      label: Bouton Airbnb
+      type: string
+    - name: bouton_email
+      label: Bouton email
+      type: string
+    - name: label_adresse
+      label: Intitulé Adresse
+      type: string
+    - name: adresse
+      label: Adresse
+      type: string
+    - name: label_acces
+      label: Intitulé Accès
+      type: string
+    - name: acces
+      label: Accès (route)
+      type: text
+      description: Laissez vide pour masquer.
+    - name: label_email
+      label: Intitulé Email
+      type: string
+    - name: label_reseaux
+      label: Intitulé Réseaux
+      type: string
+    - name: label_enregistrement
+      label: Intitulé N° d'enregistrement
+      type: string
+  - name: pied_de_page
+    label: Texte du bas de page
+    type: string

@@ -1,0 +1,97 @@
+/* MOKALEI — feuille de style. Couleurs : vert nuit #121A16, sable #F4F1E8, or #C9A663. */
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:#1E2420;background:#F4F1E8;line-height:1.6}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500}
+h1{margin:0;font-size:clamp(44px,6vw,76px);line-height:1.02;color:#F4F1E8}
+h2{margin:0 0 24px;font-size:clamp(36px,5vw,48px);line-height:1.1;max-width:760px}
+h3{margin:0 0 8px;font-size:26px}
+p{margin:0 0 18px}
+a{color:#7A5A1E}a:hover{color:#4F3A12}
+img,video{max-width:100%}
+.bloc{max-width:1200px;margin:0 auto;padding-left:24px;padding-right:24px}
+.section{padding-top:96px;padding-bottom:96px}
+.sombre{background:#121A16;color:#EDE9DD}
+.nuit{background:#0E1512;color:#EDE9DD}
+.beige{background:#E8E3D5}
+.sombre h2,.nuit h2,.sombre h3{color:#F4F1E8}
+.surtitre{margin:0 0 12px;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:#7A5A1E}
+.or{color:#C9A663}
+.texte-17{font-size:17px}
+.mesure{max-width:680px;margin-bottom:40px}
+
+/* En-tête */
+.nav{padding-top:20px;padding-bottom:20px;display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center;justify-content:space-between}
+.marque{color:#EDE9DD;text-decoration:none;font-family:'Cormorant Garamond',serif;font-size:26px;letter-spacing:.28em}
+.marque.petite{font-size:20px;letter-spacing:.24em}
+.liens{display:flex;flex-wrap:wrap;gap:8px 28px;font-size:14px;letter-spacing:.06em}
+.liens a{color:#D8D2C2;text-decoration:none;padding:6px 0}
+.liens a:hover{color:#fff}
+.liens .langue{color:#C9A663;font-weight:600}
+.accueil{padding-top:48px;padding-bottom:72px;display:flex;flex-wrap:wrap;gap:48px;align-items:center}
+.accueil-texte{flex:1 1 420px;min-width:0}
+.logo{width:132px;height:auto;display:block;margin:0 0 20px -8px;mix-blend-mode:lighten}
+.intro{margin:24px 0 36px;font-size:18px;color:#CFC9B8;max-width:520px}
+.accueil-video{flex:1 1 320px;min-width:0;margin:0;display:flex;flex-direction:column;align-items:center;gap:12px}
+.accueil-video video{width:100%;max-width:340px;aspect-ratio:9/16;object-fit:cover;display:block;border-radius:6px;background:#0E1512}
+.accueil-video figcaption{font-size:13px;letter-spacing:.08em;color:#9FA59F}
+.photo-accueil{width:100%;height:clamp(300px,48vw,640px);object-fit:cover;object-position:center 40%;display:block}
+
+/* Boutons */
+.boutons{display:flex;flex-wrap:wrap;gap:14px}
+.bouton{display:inline-block;padding:14px 28px;text-decoration:none;border-radius:2px;font-weight:500}
+.plein-or{background:#C9A663;color:#121A16;font-weight:600}
+.plein-or:hover{background:#D8B877;color:#121A16}
+.contour-clair{border:1px solid #6E7A70;color:#EDE9DD}
+.contour-clair:hover{color:#fff;border-color:#EDE9DD}
+.plein-sombre{background:#121A16;color:#F4F1E8;font-weight:600}
+.plein-sombre:hover{color:#fff;background:#24302A}
+.contour-sombre{border:1px solid #121A16;color:#121A16}
+
+/* Mise en page */
+.deux-colonnes{display:flex;flex-wrap:wrap;gap:56px;align-items:flex-start}
+.deux-colonnes.centre{align-items:center}
+.col-etroite{flex:1 1 360px;min-width:0}
+.col-large{flex:2 1 460px;min-width:0}
+.col-moitie{flex:1 1 400px;min-width:0}
+.photo{width:100%;object-fit:cover;display:block}
+.h220{height:220px}.h260{height:260px}.h300{height:300px}.h380{height:380px}.h420{height:420px}
+.photo-vue{flex:1 1 400px;min-width:0;height:clamp(280px,40vw,520px)}
+.grille-plaques{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:28px}
+.grille-plaques img:nth-child(1){object-position:center 70%}
+.grille-plaques img:nth-child(2){object-position:center 75%}
+.grille-plaques img:nth-child(3){object-position:center 45%}
+.galerie{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-bottom:24px}
+.galerie-interieur{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-bottom:12px}
+.galerie-interieur video{background:#CFC8B6}
+.legende-interieur{font-size:14px;color:#4B524D;margin-bottom:48px}
+.fares{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-bottom:48px}
+.fare{border-top:3px solid #C9A663}
+.fare .surtitre{font-size:12px;margin-bottom:4px}
+.fare h3{font-size:30px;margin-bottom:10px}
+.prenoms{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:28px 0}
+.prenoms div{border-top:1px solid #1E2420;padding-top:12px;font-size:14px;color:#4B524D}
+.prenoms span{display:block;font-family:'Cormorant Garamond',serif;font-size:40px;line-height:1;color:#1E2420}
+.cartes{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:24px}
+.carte{background:#F4F1E8;padding:28px}
+.carte p{margin:0;font-size:15px;color:#3A403C}
+.carte p.surtitre{color:#7A5A1E}
+.montagnes{margin:0;padding:0;list-style:none;display:grid;gap:12px;font-size:15px}
+.montagnes li{border-bottom:1px solid #CFC8B6;padding-bottom:10px}
+.montagnes li:last-child{border-bottom:0}
+.legende-galerie{font-size:16px;color:#CFC9B8;max-width:620px}
+.legendes{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;margin-top:24px}
+.legendes h3{font-size:28px;margin-top:18px}
+.legendes p{font-size:15px;color:#CFC9B8}
+.idees{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:32px 48px;font-size:15px;margin-top:16px}
+.idees h3{font-size:24px;margin-bottom:6px}
+.idees p{margin:0;color:#3A403C}
+.infos{font-size:15px;display:grid;gap:14px;align-content:start}
+.label{display:block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#5C6460}
+.pied{padding-top:32px;padding-bottom:32px;display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;font-size:13px;color:#9FA59F}
+@media (max-width:600px){
+  .section{padding-top:64px;padding-bottom:64px}
+  .deux-colonnes{gap:36px}
+  .grille-plaques .h260{height:170px}
+  .galerie-interieur{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .galerie-interieur .h420{height:300px}
+}

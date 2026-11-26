@@ -1,0 +1,117 @@
+{
+  "contact": {
+    "email": "[EMAIL]",
+    "instagram": "[@COMPTE]",
+    "lien_airbnb": "",
+    "numero_enregistrement": "[N° DTO-MT]"
+  },
+  "logo": "/media/logo.jpg",
+  "video_accueil": {
+    "video": "/media/visite-mokalei.mp4",
+    "image": "/media/visite-mokalei.jpg",
+    "description_fr": "Visite vidéo de MOKALEI : la pelouse, les trois fare, le pavillon, les chambres, la cuisine et la salle de bain, face aux montagnes",
+    "description_en": "Video tour of MOKALEI: the lawn, the three fare, the pavilion, bedrooms, kitchen and bathroom, facing the mountains"
+  },
+  "photo_accueil": {
+    "image": "/media/accueil.jpg",
+    "description_fr": "Soleil du matin sur Mou'a Puta et la pelouse de MOKALEI, à côté d'un fare en bois",
+    "description_en": "Morning sun over Mou'a Puta and the MOKALEI lawn, beside a wooden fare"
+  },
+  "photos_histoire": [
+    {
+      "image": "/media/plaque-moehau.jpg",
+      "description_fr": "Plaque Fare Moehau sur la rambarde en bois, avec Mou'a Puta en arrière-plan",
+      "description_en": "Fare Moehau sign on the wooden rail of the bungalow, with Mou'a Puta behind"
+    },
+    {
+      "image": "/media/plaque-kahaia.jpg",
+      "description_fr": "Plaque Fare Kahaia sur la rambarde en bois, avec la vallée et les sommets en arrière-plan",
+      "description_en": "Fare Kahaia sign on the wooden rail, with the valley and peaks behind"
+    },
+    {
+      "image": "/media/plaque-leilani.jpg",
+      "description_fr": "Plaque Fare Leilani, lettres dorées sur fond noir, fixée sur le bardage en bois",
+      "description_en": "Fare Leilani sign, gold letters on black, mounted on the wooden siding"
+    }
+  ],
+  "photos_sejour": [
+    {
+      "image": "/media/chambre-double.jpg",
+      "description_fr": "Chambre double avec grande baie vitrée sur le jardin et les montagnes",
+      "description_en": "Double bedroom with a picture window looking onto the garden and mountains"
+    },
+    {
+      "image": "/media/chambre-deux-lits.jpg",
+      "description_fr": "Chambre à deux lits avec fenêtres panoramiques face au massif du Tohiea",
+      "description_en": "Twin bedroom with wraparound windows facing the Tohiea massif"
+    },
+    {
+      "image": "/media/cuisine.jpg",
+      "description_fr": "Cuisine en bois avec plaque au gaz, réfrigérateur et îlot avec deux tabourets",
+      "description_en": "Wooden kitchen with gas hob, fridge and a bar island with two stools"
+    }
+  ],
+  "photos_interieur": [
+    {
+      "video": "",
+      "image": "/media/salon.jpg",
+      "description_fr": "Salon d'un fare : comptoir-repas avec tabourets, banquette-lit et grandes fenêtres sur la verdure",
+      "description_en": "Living area of a fare: counter dining with stools, a daybed and large windows onto the greenery"
+    },
+    {
+      "video": "",
+      "image": "/media/salle-de-bain.jpg",
+      "description_fr": "Salle de bain en bois avec lavabo sur colonne, miroir, WC et rideau en macramé",
+      "description_en": "Wooden bathroom with pedestal sink, mirror, toilet and a macramé curtain"
+    },
+    {
+      "video": "/media/douche-exterieure.mp4",
+      "image": "/media/douche-exterieure.jpg",
+      "description_fr": "Douche extérieure privée en pierre, à ciel ouvert sous les palmiers",
+      "description_en": "Private open-air stone outdoor shower beneath the palms"
+    },
+    {
+      "video": "/media/chambre-video.mp4",
+      "image": "/media/chambre-video.jpg",
+      "description_fr": "La porte coulissante en bois s'ouvre sur une chambre lumineuse aux fenêtres tournées vers la forêt",
+      "description_en": "A sliding wooden door opens onto a bright bedroom with windows facing the forest"
+    }
+  ],
+  "photo_vue": {
+    "image": "/media/vue-tohiea.jpg",
+    "description_fr": "Les falaises ouest du massif du Tohiea dans la lumière du matin, vues depuis la pelouse de MOKALEI",
+    "description_en": "The western cliffs of the Tohiea massif in morning light, seen across the MOKALEI lawn"
+  },
+  "photos_soirees": [
+    {
+      "image": "/media/soir-fare.jpg",
+      "description_fr": "Les trois fare éclairés la nuit sous le sommet de Mou'a Puta baigné de lune",
+      "description_en": "The three fare lit at night beneath the moonlit peak of Mou'a Puta"
+    },
+    {
+      "image": "/media/soir-pavillon.jpg",
+      "description_fr": "Le pavillon couvert et ses guirlandes lumineuses sous la pleine lune",
+      "description_en": "The covered dining pavilion strung with lights under a full moon"
+    },
+    {
+      "image": "/media/soir-feu.jpg",
+      "description_fr": "Le feu de camp sur la pelouse, par une nuit nuageuse éclairée par la lune",
+      "description_en": "The fire pit burning on the lawn on a cloudy moonlit night"
+    }
+  ],
+  "image_legende_1": {
+    "image": "/media/legende-hiro.jpg",
+    "description_fr": "Illustration du guerrier Pai lançant sa lance vers Mou'a Puta",
+    "description_en": "Illustration of the warrior Pai throwing his spear toward Mou'a Puta"
+  },
+  "image_legende_2": {
+    "image": "/media/legende-pieuvre.jpg",
+    "description_fr": "Illustration d'une pieuvre à côté d'une couronne de crêtes",
+    "description_en": "Illustration of an octopus beside a ring of mountain ridges"
+  },
+  "image_legende_3": {
+    "image": "/media/legende-mape.jpg",
+    "description_fr": "Gravure d'un māpē aux grandes racines-contreforts près d'un mur de pierre",
+    "description_en": "Engraving of a māpē tree with large buttress roots beside a stone wall"
+  }
+}

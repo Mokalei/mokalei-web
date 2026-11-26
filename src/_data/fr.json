@@ -1,0 +1,155 @@
+{
+  "titre_onglet": "MOKALEI — Retraite dans la caldeira de Mo'orea",
+  "description_google": "MOKALEI, trois fare en bois dans l'ancienne caldeira de Mo'orea, à Paopao, baie de Cook. Piscine biologique sans chlore, vue sur les montagnes. Un fare ou toute la propriété jusqu'à 16 personnes.",
+  "menu": {
+    "histoire": "Notre histoire",
+    "sejour": "Le séjour",
+    "vue": "La vue",
+    "legendes": "Légendes",
+    "explorer": "Explorer",
+    "reserver": "Réserver"
+  },
+  "accueil": {
+    "surtitre": "Paopao · Baie de Cook · Mo'orea",
+    "titre": "Une retraite au cœur de l'ancienne caldeira de Mo'orea",
+    "texte": "Trois fare au pied de Mou'a Puta, du massif du Tohiea et du mont Rotui. Une piscine biologique sans chlore, une vue panoramique sur la caldeira et le rythme paisible de l'intérieur de l'île.",
+    "bouton_1": "Voir les disponibilités",
+    "bouton_2": "Découvrir MOKALEI",
+    "legende_video": "MOKALEI en 40 secondes"
+  },
+  "histoire": {
+    "surtitre": "Le sens de MOKALEI",
+    "titre": "Un nom qui a traversé les lagons",
+    "texte_1": "Il y a des années, notre père, aujourd'hui disparu, a baptisé son bateau de pêche au large à Bora Bora du nom de ses trois filles. Il a réuni leurs prénoms en un seul : MOKALEI.",
+    "texte_2": "Aujourd'hui, ce nom a trouvé une nouvelle maison dans les montagnes de Mo'orea. Chacun de nos trois bungalows porte le prénom d'une des sœurs : Fare Moehau, Fare Kahaia et Fare Leilani."
+  },
+  "sejour": {
+    "surtitre": "Votre séjour",
+    "titre": "Trois fare, chacun avec sa montagne",
+    "texte": "Trois fare en bois indépendants, simples et confortables, reliés par des espaces extérieurs partagés. Chacun a sa cuisine équipée avec comptoir-repas, un salon avec deux banquettes-lits, une salle de bain et sa propre douche extérieure. Réservez un seul fare, ou toute la propriété jusqu'à 16 personnes.",
+    "fares": [
+      {
+        "surtitre": "Face à Mou'a Puta",
+        "nom": "Fare Moehau",
+        "texte": "1 chambre · jusqu'à 4 personnes. Un grand lit (deux lits simples réunis par un surmatelas king) et deux banquettes-lits au salon."
+      },
+      {
+        "surtitre": "Face au massif du Tohiea",
+        "nom": "Fare Kahaia",
+        "texte": "2 chambres · jusqu'à 6 personnes. Un grand lit, une chambre à deux lits simples et deux banquettes-lits au salon."
+      },
+      {
+        "surtitre": "Face au mont Rotui",
+        "nom": "Fare Leilani",
+        "texte": "2 chambres · jusqu'à 6 personnes. Un grand lit, une chambre à deux lits simples et deux banquettes-lits au salon."
+      }
+    ],
+    "legende_interieur": "Salon et comptoir-repas · salle de bain · douche extérieure privée · chambre",
+    "atouts": [
+      {
+        "titre": "Jusqu'à 16 personnes",
+        "texte": "Un fare pour un séjour privé, ou toute la propriété pour une famille, un groupe d'amis, une retraite ou une équipe sportive."
+      },
+      {
+        "titre": "Une piscine biologique",
+        "texte": "Sans chlore. Plantes et petits poissons filtrent l'eau naturellement, dans un écosystème vivant."
+      },
+      {
+        "titre": "Espaces extérieurs partagés",
+        "texte": "Coin barbecue, grande table de pique-nique pour 16, feu de camp, vaste pelouse, lit suspendu sous les arbres et le coin du ruisseau aux māpē."
+      },
+      {
+        "titre": "Eau de source",
+        "texte": "Fournie par un puits privé, avec de l'eau en bouteille offerte à l'arrivée. Wi-Fi, machine à laver et étendoir sur place."
+      }
+    ]
+  },
+  "vue": {
+    "surtitre": "Lire le paysage",
+    "titre": "Une vue que peu de visiteurs connaissent",
+    "texte": "La plupart des photos de Mo'orea montrent les montagnes depuis le lagon. Depuis MOKALEI, vous regardez le flanc ouest du massif du Tohiea, le plus haut sommet de l'île, et ses crêtes intérieures spectaculaires.",
+    "montagnes": [
+      {
+        "nom": "Mou'a Puta",
+        "texte": "la montagne percée, dont la crête a inspiré notre logo"
+      },
+      {
+        "nom": "Massif du Tohiea",
+        "texte": "le plus haut sommet de Mo'orea"
+      },
+      {
+        "nom": "Mou'a Roa",
+        "texte": "« la grande montagne », associée au Bali Ha'i de South Pacific"
+      },
+      {
+        "nom": "Mont Rotui",
+        "texte": "entre la baie de Cook et la baie d'Ōpūnohu"
+      }
+    ]
+  },
+  "soirees": {
+    "surtitre": "Les soirées à MOKALEI",
+    "titre": "Quand la montagne devient argent",
+    "texte": "Dîner sous les guirlandes du pavillon, un feu sur la pelouse et la lune qui se lève sur la caldeira."
+  },
+  "legendes": {
+    "surtitre": "Légendes de Mo'orea",
+    "titre": "Avant la géologie, les montagnes se racontaient par des légendes",
+    "legende_1": {
+      "titre": "Hiro et la montagne percée",
+      "texte": "Selon une version, le navigateur Hiro voulut voler le mont Rotui. La lance du guerrier Pai transperça Mou'a Puta, y laissant sa célèbre ouverture."
+    },
+    "legende_2": {
+      "titre": "Aimeho et la pieuvre sacrée",
+      "texte": "L'ancien nom de Mo'orea évoque une pieuvre dont les huit bras sont les huit grandes crêtes de l'île."
+    },
+    "legende_3": {
+      "titre": "Le bosquet de māpē",
+      "texte": "Le long de notre ruisseau subsiste un ancien bosquet de māpē, le châtaignier tahitien. Nous le protégeons pour qu'il reprenne vie."
+    }
+  },
+  "explorer": {
+    "surtitre": "Explorer depuis MOKALEI",
+    "titre": "Au centre de l'île",
+    "idees": [
+      {
+        "titre": "Sentiers de montagne",
+        "texte": "Le Belvédère, le sentier des ancêtres E'a Tupuna sous les māpē, le col des Trois Pinus et sa vue sur les deux baies."
+      },
+      {
+        "titre": "Sites patrimoniaux",
+        "texte": "Les marae de la vallée d'Ōpūnohu et le temple octogonal de Papetoai."
+      },
+      {
+        "titre": "Plages et lagon",
+        "texte": "Temae, Ta'ahiamanu et Tiahura pour le snorkeling, les raies et les tortues avec des guides locaux."
+      },
+      {
+        "titre": "Au pays de l'ananas",
+        "texte": "La route des Ananas à pied, en vélo électrique ou en quad guidé, à travers les exploitations."
+      },
+      {
+        "titre": "Sorties en mer",
+        "texte": "Depuis l'embarcadère de la baie de Cook : observation des baleines en saison, raies et requins, snorkeling et croisières dans le lagon."
+      },
+      {
+        "titre": "Commerces à Maharepa",
+        "texte": "À quelques minutes : supermarchés, boulangeries, cafés, restaurants, pharmacies et banques."
+      }
+    ]
+  },
+  "reservation": {
+    "titre": "Préparer votre séjour",
+    "texte": "Un fare de 4 ou 6 personnes, ou la propriété entière jusqu'à 16 personnes. Arrivée autonome à partir de 15 h, départ avant 10 h. Les réservations se font sur Airbnb.",
+    "bouton_airbnb": "Réserver sur Airbnb",
+    "bouton_email": "Nous écrire",
+    "label_adresse": "Adresse",
+    "adresse": "Paopao, baie de Cook, Mo'orea, Polynésie française",
+    "label_acces": "Accès",
+    "acces": "Le dernier tronçon de route n'est pas goudronné : accessible en scooter et en voiture par temps normal, 4x4 conseillé en cas de fortes pluies.",
+    "label_email": "Email",
+    "label_reseaux": "Instagram · Facebook",
+    "label_enregistrement": "N° d'enregistrement"
+  },
+  "pied_de_page": "Mo'orea Caldera Retreat · Paopao, Polynésie française"
+}

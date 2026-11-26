@@ -1,0 +1,14 @@
+{
+  "name": "mokalei-site",
+  "version": "1.0.0",
+  "description": "Site MOKALEI \u2014 Mo'orea Caldera Retreat",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.8"
+  },
+  "private": true,
+  "type": "module"
+}
