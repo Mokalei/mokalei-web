@@ -177,7 +177,7 @@
       <div><span class="label">{{ t.reservation.label_adresse }}</span>{{ t.reservation.adresse }}</div>
       {% if t.reservation.acces %}<div><span class="label">{{ t.reservation.label_acces }}</span>{{ t.reservation.acces }}</div>{% endif %}
       <div><span class="label">{{ t.reservation.label_email }}</span><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></div>
-      <div><span class="label">{{ t.reservation.label_reseaux }}</span>{{ site.contact.instagram }}</div>
+      <div><span class="label">{{ t.reservation.label_reseaux }}</span>{% if site.contact.instagram %}<a href="{{ site.contact.instagram }}" rel="noopener">Instagram</a>{% endif %}{% if site.contact.instagram and site.contact.facebook %} · {% endif %}{% if site.contact.facebook %}<a href="{{ site.contact.facebook }}" rel="noopener">Facebook</a>{% endif %}</div>
       {% if site.contact.numero_enregistrement %}<div><span class="label">{{ t.reservation.label_enregistrement }}</span>{{ site.contact.numero_enregistrement }}</div>{% endif %}
     </div>
   </div>

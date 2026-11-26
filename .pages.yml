@@ -18,9 +18,13 @@ content:
       label: Adresse email
       type: string
     - name: instagram
-      label: Compte Instagram / Facebook
+      label: Lien Instagram
       type: string
-      description: 'Exemple : @mokaleimoorea'
+      description: Adresse complète, par exemple https://www.instagram.com/mokalei.moorea/
+    - name: facebook
+      label: Lien Facebook
+      type: string
+      description: Adresse complète de la page Facebook.
     - name: lien_airbnb
       label: Lien de l'annonce Airbnb
       type: string

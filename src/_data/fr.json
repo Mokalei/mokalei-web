@@ -70,19 +70,19 @@
     "texte": "La plupart des photos de Mo'orea montrent les montagnes depuis le lagon. Depuis MOKALEI, vous regardez le flanc ouest du massif du Tohiea, le plus haut sommet de l'île, et ses crêtes intérieures spectaculaires.",
     "montagnes": [
       {
-        "nom": "Mou'a Puta",
+        "nom": "Mou'a Puta (830 m)",
         "texte": "la montagne percée, dont la crête a inspiré notre logo"
       },
       {
-        "nom": "Massif du Tohiea",
+        "nom": "Massif du Tohiea (1 207 m)",
         "texte": "le plus haut sommet de Mo'orea"
       },
       {
-        "nom": "Mou'a Roa",
+        "nom": "Mou'a Roa (880 m)",
         "texte": "« la grande montagne », associée au Bali Ha'i de South Pacific"
       },
       {
-        "nom": "Mont Rotui",
+        "nom": "Mont Rotui (899 m)",
         "texte": "entre la baie de Cook et la baie d'Ōpūnohu"
       }
     ]
